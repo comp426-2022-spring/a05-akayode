@@ -84,6 +84,8 @@ if (args.debug == true) {
   })
 }
 
+app.use(express.static('./public'))
+
 app.get('/app', (req, res) => {
     res.statusCode = 200
     res.statusMessage = 'OK'
